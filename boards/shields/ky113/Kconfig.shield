@@ -1,0 +1,14 @@
+# Copyright (c) 2023 The ZMK Contributors
+# SPDX-License-Identifier: MIT
+
+config SHIELD_KY113_DONGLE
+    def_bool $(shields_list_contains,ky113_dongle)
+
+config SHIELD_KY113_LEFT
+    def_bool $(shields_list_contains,ky113_left)
+
+config SHIELD_KY113_RIGHT
+    def_bool $(shields_list_contains,ky113_right)
+
+config SHIELD_KY113_PAD
+    def_bool $(shields_list_contains,ky113_pad)

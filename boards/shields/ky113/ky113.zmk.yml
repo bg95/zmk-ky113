@@ -1,0 +1,17 @@
+file_format: "1"
+id: ky113
+name: ky113
+type: shield
+url: https://github.com/kawvin/zmk-config
+requires: [pro_micro]
+exposes: [i2c_oled]
+features:
+  - keys
+  - display
+  - encoder
+  # - underglow
+siblings:
+  - ky113_dongle
+  - ky113_left
+  - ky113_right
+  - ky113_pad
