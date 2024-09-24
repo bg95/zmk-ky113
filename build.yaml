@@ -23,26 +23,26 @@ include:
     shield: ky113_dongle display_130_cat
     artifact-name: ky113_DongleWithCat
 
-  - board: nice_nano_v2
-    shield: ky113_left
-    cmake-args: -DCONFIG_ZMK_SPLIT_ROLE_CENTRAL=n
-    artifact-name: ky113_Left
-  - board: nice_nano_v2
-    shield: ky113_right
-    artifact-name: ky113_Right
-  - board: nice_nano_v2
-    shield: ky113_pad
-    cmake-args: -DCONFIG_ZMK_SPLIT_ROLE_CENTRAL=n
-    artifact-name: ky113_Pad
+  # - board: nice_nano_v2
+  #   shield: ky113_left
+  #   cmake-args: -DCONFIG_ZMK_SPLIT_ROLE_CENTRAL=n
+  #   artifact-name: ky113_Left
+  # - board: nice_nano_v2
+  #   shield: ky113_right
+  #   artifact-name: ky113_Right
+  # - board: nice_nano_v2
+  #   shield: ky113_pad
+  #   cmake-args: -DCONFIG_ZMK_SPLIT_ROLE_CENTRAL=n
+  #   artifact-name: ky113_Pad
 
-  - board: nice_nano_v2
-    shield: ky113_left  display_091_drum
-    cmake-args: -DCONFIG_ZMK_DISPLAY=y
-    artifact-name: ky113_Left_central
+  # - board: nice_nano_v2
+  #   shield: ky113_left  display_091_drum
+  #   cmake-args: -DCONFIG_ZMK_DISPLAY=y
+  #   artifact-name: ky113_Left_central
   
-  - board: nice_nano_v2
-    shield: ky113_pad
-    artifact-name: ky113_pad_central
+  # - board: nice_nano_v2
+  #   shield: ky113_pad
+  #   artifact-name: ky113_pad_central
 
   # - board: nice_nano_v2
   #   shield: settings_reset

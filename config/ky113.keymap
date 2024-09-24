@@ -5,9 +5,10 @@
  */
 
 #include <behaviors.dtsi>
-#include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/ext_power.h>
+#include <dt-bindings/zmk/keys.h>
+#include <dt-bindings/zmk/outputs.h>
 
 / {
 
@@ -174,13 +175,12 @@
 //  |    |    |    |    |    |    |    |    |    |    |    |    |    |    |    |     |    |    |    |    |     |    |     |
 
             bindings = <
-        &trans  &trans  &trans  &trans  &trans  &trans  &trans          &trans  &trans  &trans  &trans  &trans  &trans  &to 4           &trans          &trans  &trans     &trans    &trans     
-        ^       &       *       (       )       &trans  &trans          &trans  &trans  &trans  &trans  &trans  &trans  &trans          &trans          &trans  &trans     &trans    &trans     
-&trans  &trans  &trans  &trans  &trans  &trans  &trans                  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans          &trans  &kp PG_UP  &kp UP    &kp HOME   
-&trans  &trans  &trans  &trans  &trans  &trans  &trans                  &trans  &trans  &trans  &trans  &trans  &trans  &trans          &trans          &trans  &kp LEFT   &trans    &kp RIGHT  
-&trans  &trans  &trans  &trans  &trans  &trans  &trans                  &trans  &trans  &trans  &trans  &trans  &trans  &trans          &trans          &trans  &kp PG_DN  &kp DOWN  &kp END    
-&trans  &trans  &trans  &trans  &trans  &trans                                  &trans  &trans  &trans  &trans  &trans  &trans          &trans          &trans  &trans     &trans    &trans     
-
+        &trans     &trans    &trans    &trans    &trans    &trans  &trans          &trans  &trans  &trans  &trans  &trans  &trans  &to 4           &trans          &trans  &trans     &trans    &trans     
+        &kp CARET  &kp AMPS  &kp STAR  &kp LPAR  &kp RPAR  &trans  &trans          &trans  &trans  &trans  &trans  &trans  &trans  &trans          &trans          &trans  &trans     &trans    &trans     
+&trans  &trans     &trans    &trans    &trans    &trans    &trans                  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans          &trans  &kp PG_UP  &kp UP    &kp HOME   
+&trans  &trans     &trans    &trans    &trans    &trans    &trans                  &trans  &trans  &trans  &trans  &trans  &trans  &trans          &trans          &trans  &kp LEFT   &trans    &kp RIGHT  
+&trans  &trans     &trans    &trans    &trans    &trans    &trans                  &trans  &trans  &trans  &trans  &trans  &trans  &trans          &trans          &trans  &kp PG_DN  &kp DOWN  &kp END    
+&trans  &trans     &trans    &trans    &trans    &trans                                  &trans  &trans  &trans  &trans  &trans  &trans          &trans          &trans  &trans     &trans    &trans     
             >;
             label = "Symbol";
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
