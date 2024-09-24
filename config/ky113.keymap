@@ -191,18 +191,18 @@
 //  ---------------------------------------------------------------------------------
 //  |    |&bootloader |        |        |        |          |         |    |    |    |    |    |    |    |&bootloader|&to 0|    |    |    |    |    |    |    |
 //  |    |BT_CLR      |BT_SEL 0|BT_SEL 1|BT_SEL 2|BT_SEL 3  |BT_SEL 4 |    |    |    |    |    |    |    |           |     |    |    |    |    |    |    |    |
-//  |    |EP_TOG      |        |RGB_EFF |ENTER   |          |         |    |    |    |    |    |    |    |           |     |    |    |    |    |    |    |    |
-//  |    |RGB_TOG     |RGB_BRD |RGB_EFR |RGB_BRI |LS(LC(N8))|LC(ENTER)|    |    |    |    |    |    |    |           |     |    |    |    |    |    |    |    |
-//  |    |&out OUT_TOG|RGB_SPD |RGB_SPI |RGB_HUD |RGB_HUI   |         |    |    |    |    |    |    |    |           |     |    |    |    |    |    |    |    |
+//  |    |EP_TOG      |        |        |ENTER   |          |         |    |    |    |    |    |    |    |           |     |    |    |    |    |    |    |    |
+//  |    |            |        |        |        |LS(LC(N8))|LC(ENTER)|    |    |    |    |    |    |    |           |     |    |    |    |    |    |    |    |
+//  |    |&out OUT_TOG|        |        |        |          |         |    |    |    |    |    |    |    |           |     |    |    |    |    |    |    |    |
 //  |    |            |        |        |        |          |         |    |    |    |    |    |    |    |           |     |    |    |    |    |    |    |    |
 
             bindings = <
-        &bootloader        &trans           &trans           &trans           &trans           &trans         &trans          &trans  &trans  &trans  &trans  &trans  &bootloader  &to 0           &trans          &trans  &trans  &trans  &trans  
-        &bt BT_CLR         &bt BT_SEL 0     &bt BT_SEL 1     &bt BT_SEL 2     &bt BT_SEL 3     &bt BT_SEL 4   &trans          &trans  &trans  &trans  &trans  &trans  &trans       &trans          &trans          &trans  &trans  &trans  &trans  
-&trans  &ext_power EP_TOG  &trans           &rgb_ug RGB_EFF  &kp ENTER        &trans           &trans                         &trans  &trans  &trans  &trans  &trans  &trans       &trans  &trans  &trans          &trans  &trans  &trans  &trans  
-&trans  &rgb_ug RGB_TOG    &rgb_ug RGB_BRD  &rgb_ug RGB_EFR  &rgb_ug RGB_BRI  &kp LS(LC(N8))   &kp LC(ENTER)                  &trans  &trans  &trans  &trans  &trans  &trans       &trans          &trans          &trans  &trans  &trans  &trans  
-&trans  &out OUT_TOG       &rgb_ug RGB_SPD  &rgb_ug RGB_SPI  &rgb_ug RGB_HUD  &rgb_ug RGB_HUI  &trans                         &trans  &trans  &trans  &trans  &trans  &trans       &trans          &trans          &trans  &trans  &trans  &trans  
-&trans  &trans             &trans           &trans           &trans           &trans                                                  &trans  &trans  &trans  &trans  &trans       &trans          &trans          &trans  &trans  &trans  &trans  
+        &bootloader        &trans        &trans        &trans        &trans          &trans         &trans          &trans  &trans  &trans  &trans  &trans  &bootloader  &to 0           &trans          &trans  &trans  &trans  &trans  
+        &bt BT_CLR         &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3    &bt BT_SEL 4   &trans          &trans  &trans  &trans  &trans  &trans  &trans       &trans          &trans          &trans  &trans  &trans  &trans  
+&trans  &ext_power EP_TOG  &trans        &trans        &kp ENTER     &trans          &trans                         &trans  &trans  &trans  &trans  &trans  &trans       &trans  &trans  &trans          &trans  &trans  &trans  &trans  
+&trans  &trans             &trans        &trans        &trans        &kp LS(LC(N8))  &kp LC(ENTER)                  &trans  &trans  &trans  &trans  &trans  &trans       &trans          &trans          &trans  &trans  &trans  &trans  
+&trans  &out OUT_TOG       &trans        &trans        &trans        &trans          &trans                         &trans  &trans  &trans  &trans  &trans  &trans       &trans          &trans          &trans  &trans  &trans  &trans  
+&trans  &trans             &trans        &trans        &trans        &trans                                                 &trans  &trans  &trans  &trans  &trans       &trans          &trans          &trans  &trans  &trans  &trans  
 
             >;
             label = "Control";
