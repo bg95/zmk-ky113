@@ -123,7 +123,6 @@ int zmk_widget_modifiers_init(struct zmk_widget_modifiers *widget, lv_obj_t *par
     lv_style_set_line_width(&style_line, 2);
 
     static const lv_point_t selection_line_points[] = { {0, 0}, {SIZE_SYMBOLS, 0} };
-    //static const lv_point_t selection_line_points[] = { {0, SIZE_SYMBOLS}, {SIZE_SYMBOLS, SIZE_SYMBOLS} };
 
     for (int i = 0; i < NUM_SYMBOLS; i++) {
         modifier_symbols[i]->symbol = lv_img_create(widget->obj);

@@ -86,8 +86,7 @@ static void anim_y_cb(void * var, int32_t v) {
 }
 
 static void anim_size_cb(void * var, int32_t v) {
-    // selection_line_points[1].x = v;
-    selection_line_points[1].y = v;
+    selection_line_points[1].x = v;
 }
 
 static void move_object_x(void *obj, int32_t from, int32_t to) {
@@ -134,7 +133,6 @@ static void set_status_symbol(lv_obj_t *widget, struct output_status_state state
     switch (state.selected_endpoint.transport) {
     case ZMK_TRANSPORT_USB:
         if (current_selection_line_state != selection_line_state_usb) {
-            // move_object_x(selection_line, lv_obj_get_x(bt) - 1, lv_obj_get_x(usb) - 1);
             move_object_x(selection_line, lv_obj_get_x(bt) - 1, lv_obj_get_x(usb) - 1);
             change_size_object(selection_line, 18, 11);
             current_selection_line_state = selection_line_state_usb;
@@ -142,7 +140,6 @@ static void set_status_symbol(lv_obj_t *widget, struct output_status_state state
         break;
     case ZMK_TRANSPORT_BLE:
         if (current_selection_line_state != selection_line_state_bt) {
-            // move_object_x(selection_line, lv_obj_get_x(usb) - 1, lv_obj_get_x(bt) - 1);
             move_object_x(selection_line, lv_obj_get_x(usb) - 1, lv_obj_get_x(bt) - 1);
             change_size_object(selection_line, 11, 18);
             current_selection_line_state = selection_line_state_bt;
@@ -196,7 +193,7 @@ int zmk_widget_output_status_init(struct zmk_widget_output_status *widget, lv_ob
     lv_obj_align_to(usb_hid_status, usb, LV_ALIGN_TOP_LEFT, 2, 7);
 
     lv_obj_t *bt = lv_img_create(widget->obj);
-    lv_obj_align_to(bt, usb, LV_ALIGN_OUT_RIGHT_TOP, 2, 4);
+    lv_obj_align_to(bt, usb, LV_ALIGN_OUT_RIGHT_TOP, 2, 0);
     lv_img_set_src(bt, &sym_bt);
 
     lv_obj_t *bt_number = lv_img_create(widget->obj);
