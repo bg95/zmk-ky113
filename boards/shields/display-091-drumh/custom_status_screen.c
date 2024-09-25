@@ -50,12 +50,12 @@ lv_obj_t *zmk_display_status_screen() {
 
     // 层
     zmk_widget_layer_status_init(&layer_status_widget, screen);
-    lv_obj_align(zmk_widget_layer_status_obj(&layer_status_widget), LV_ALIGN_TOP_LEFT, 96,20);
+    lv_obj_align(zmk_widget_layer_status_obj(&layer_status_widget), LV_ALIGN_TOP_LEFT, 65,20);
     // lv_obj_align_to(zmk_widget_layer_status_obj(&layer_status_widget), zmk_widget_bongo_drum_obj(&bongo_drum_widget), LV_ALIGN_BOTTOM_LEFT, 0, 5);
 
     // 敲鼓动画
     zmk_widget_bongo_drum_init(&bongo_drum_widget, screen);
-    lv_obj_align(zmk_widget_bongo_drum_obj(&bongo_drum_widget), LV_ALIGN_TOP_LEFT, 60, 0);
+    lv_obj_align(zmk_widget_bongo_drum_obj(&bongo_drum_widget), LV_ALIGN_TOP_LEFT, 96, 0);
 
     // 电池电量
     // zmk_widget_battery_status_init(&battery_status_widget, screen);
@@ -63,7 +63,7 @@ lv_obj_t *zmk_display_status_screen() {
 
 // #if IS_ENABLED(CONFIG_ZMK_WIDGET_BATTERY_STATUS_SHOW_PERIPHERAL)
     zmk_widget_peripheral_battery_status_init(&peripheral_battery_status_widget, screen);
-    lv_obj_align(zmk_widget_peripheral_battery_status_obj(&peripheral_battery_status_widget), LV_ALIGN_TOP_RIGHT, 0, 0);
+    lv_obj_align(zmk_widget_peripheral_battery_status_obj(&peripheral_battery_status_widget), LV_ALIGN_TOP_LEFT, 33, 0);
     // zmk_widget_peripheral_status_init(&peripheral_status_widget, screen);
     // lv_obj_align(zmk_widget_peripheral_status_obj(&peripheral_status_widget), LV_ALIGN_TOP_LEFT, 0, 0);
 // #endif
