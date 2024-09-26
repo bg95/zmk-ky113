@@ -73,11 +73,11 @@ static void set_battery_symbol(lv_obj_t *widget, struct battery_state state) {
     // lv_obj_t *label = lv_obj_get_child(widget, state.source * 2 + 1);
     uint8_t level = state.level;
 
-    if (level > 0 || state.usb_present) {
-      lv_obj_clear_flag(symbol, LV_OBJ_FLAG_HIDDEN);
-    } else {
-       lv_obj_add_flag(symbol, LV_OBJ_FLAG_HIDDEN);
-    }
+    // if (level > 0 || state.usb_present) {
+    //   lv_obj_clear_flag(symbol, LV_OBJ_FLAG_HIDDEN);
+    // } else {
+    //    lv_obj_add_flag(symbol, LV_OBJ_FLAG_HIDDEN);
+    // }
     if (!state.usb_present) {
         if (level > 95) {
             lv_img_set_src(symbol, batterys_level[9]);
@@ -115,11 +115,10 @@ static struct battery_state peripheral_battery_status_get_state(const zmk_event_
     const struct zmk_peripheral_battery_state_changed *ev = as_zmk_peripheral_battery_state_changed(eh);
     return (struct battery_state){
         .source = ev->source + SOURCE_OFFSET,
-        // .source = ev->source + 1,
         .level = ev->state_of_charge,
-#if IS_ENABLED(CONFIG_USB_DEVICE_STACK)
-        .usb_present = zmk_usb_is_powered(),
-#endif /* IS_ENABLED(CONFIG_USB_DEVICE_STACK) */
+// #if IS_ENABLED(CONFIG_USB_DEVICE_STACK)
+//         .usb_present = zmk_usb_is_powered(),
+// #endif /* IS_ENABLED(CONFIG_USB_DEVICE_STACK) */
     };
 }
 
@@ -162,7 +161,7 @@ int zmk_widget_peripheral_battery_status_init(struct zmk_widget_peripheral_batte
 
     lv_obj_set_size(widget->obj, LV_SIZE_CONTENT, LV_SIZE_CONTENT);
 
-    int initial_x_offset = (ZMK_SPLIT_BLE_PERIPHERAL_COUNT ) * 9;
+    // int initial_x_offset = (ZMK_SPLIT_BLE_PERIPHERAL_COUNT ) * 9;
 
     for (int i =0; i< ZMK_SPLIT_BLE_PERIPHERAL_COUNT + SOURCE_OFFSET; i++) {  
     // for (int i =0; i< ZMK_SPLIT_BLE_PERIPHERAL_COUNT + 1; i++) {  
@@ -176,8 +175,7 @@ int zmk_widget_peripheral_battery_status_init(struct zmk_widget_peripheral_batte
         //lv_obj_align(battery_widget_objects[i].battery_label, LV_ALIGN_LEFT_MID, initial_x_offset - i * 35, 0);
         // lv_obj_align(battery_label, LV_ALIGN_TOP_LEFT, i*9+3, 10);
         
-        
-        lv_obj_add_flag(image_canvas, LV_OBJ_FLAG_HIDDEN);
+        //lv_obj_add_flag(image_canvas, LV_OBJ_FLAG_HIDDEN);
         // lv_obj_add_flag(battery_label, LV_OBJ_FLAG_HIDDEN);
 
         lv_img_set_src(image_canvas, batterys_level[11]);
