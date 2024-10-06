@@ -28,13 +28,13 @@ include:
     shield: ky113_left display_091_drum
     cmake-args: -DCONFIG_ZMK_DISPLAY=y
     artifact-name: ky113_M1_1_Left_central
-  # - board: nice_nano_v2
-  #   shield: ky113_right
-  #   artifact-name: ky113_M1_2_Right
-  # - board: nice_nano_v2
-  #   shield: ky113_pad
-  #   cmake-args: -DCONFIG_ZMK_SPLIT_ROLE_CENTRAL=n
-  #   artifact-name: ky113_M1_3_Pad
+  - board: nice_nano_v2
+    shield: ky113_right
+    artifact-name: ky113_M1_2_Right
+  - board: nice_nano_v2
+    shield: ky113_pad
+    cmake-args: -DCONFIG_ZMK_SPLIT_ROLE_CENTRAL=n
+    artifact-name: ky113_M1_3_Pad
 
 
 # # 二、【左、右分体方案】
