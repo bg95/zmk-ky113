@@ -616,6 +616,9 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
+  - '&mkp LCLK'
+  - '&mmv MOVE_UP'
+  - '&mkp RCLK'
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -632,6 +635,9 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
+  - '&mmv MOVE_LEFT'
+  - '&mmv MOVE_RIGHT'
+  - '&mmv MOVE_DOWN'
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -648,15 +654,9 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - '&mkp MCLK'
+  - '&mkp MB4'
+  - '&mkp MB5'
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -706,23 +706,9 @@ combos:
   k: {t: ',', h: .}
 - p: [81, 80]
   k: {t: /, h: \}
-- p: [62, 61]
-  k: LEFT ARROW
-- p: [62, 63]
-  k: RIGHT
-- p: [63, 41]
-  k: UP ARROW
-- p: [63, 61]
-  k: DOWN
 - p: [31, 30]
   k: {t: '-', h: _}
 - p: [66, 67]
   k: ENTER
 - p: [80, 79]
   k: '?'
-- p: [97, 98, 99]
-  k: MUTE
-- p: [97, 99]
-  k: VOL UP
-- p: [97, 98]
-  k: VOL DN
