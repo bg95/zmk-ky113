@@ -25,7 +25,7 @@ include:
   
   # 一、【左、右、PAD三分体方案】
   - board: nice_nano_v2
-    shield: ky113_left display_091_drumb
+    shield: ky113_left display_091_drum
     cmake-args: -DCONFIG_ZMK_DISPLAY=y
     artifact-name: ky113_M1_1_Left_central
   # - board: nice_nano_v2
