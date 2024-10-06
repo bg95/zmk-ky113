@@ -10,7 +10,7 @@ features:
   - display
   - encoder
 siblings:
-  - ky113_dongleh
+  # - ky113_dongle
   - ky113_left
   - ky113_right
   - ky113_pad
