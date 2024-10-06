@@ -9,9 +9,7 @@ features:
   - keys
   - display
   - encoder
-  # - underglow
 siblings:
-  # - ky113_dongle
   - ky113_dongleh
   - ky113_left
   - ky113_right

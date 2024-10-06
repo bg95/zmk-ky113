@@ -23,31 +23,65 @@ include:
   #   shield: ky113_dongle display_130_cat
   #   artifact-name: ky113_DongleWithCat
   
+  # 一、【左、右、PAD三分体方案】
   - board: nice_nano_v2
-    shield: ky113_dongleh display_091_drumh
-    artifact-name: ky113_DongleWithDrumH
+    shield: ky113_left  display_091_drum
+    cmake-args: -DCONFIG_ZMK_DISPLAY=y
+    artifact-name: ky113_M1_1_Left_central
+  - board: nice_nano_v2
+    shield: ky113_right
+    artifact-name: ky113_M1_2_Right
+  - board: nice_nano_v2
+    shield: ky113_pad
+    cmake-args: -DCONFIG_ZMK_SPLIT_ROLE_CENTRAL=n
+    artifact-name: ky113_M1_3_Pad
 
-  # - board: nice_nano_v2
-  #   shield: ky113_left
-  #   cmake-args: -DCONFIG_ZMK_SPLIT_ROLE_CENTRAL=n
-  #   artifact-name: ky113_Left
-  # - board: nice_nano_v2
-  #   shield: ky113_right
-  #   artifact-name: ky113_Right
-  # - board: nice_nano_v2
-  #   shield: ky113_pad
-  #   cmake-args: -DCONFIG_ZMK_SPLIT_ROLE_CENTRAL=n
-  #   artifact-name: ky113_Pad
 
-  # - board: nice_nano_v2
-  #   shield: ky113_left  display_091_drum
-  #   cmake-args: -DCONFIG_ZMK_DISPLAY=y
-  #   artifact-name: ky113_Left_central
-  
-  # - board: nice_nano_v2
-  #   shield: ky113_pad
-  #   artifact-name: ky113_pad_central
+# # 二、【左、右分体方案】
+#   - board: nice_nano_v2
+#     shield: ky113_left  display_091_drum
+#     cmake-args: -DCONFIG_ZMK_DISPLAY=y -DCONFIG_ZMK_SPLIT_BLE_CENTRAL_PERIPHERALS=1
+#     artifact-name: ky113_M2_1_Left_central
+#   - board: nice_nano_v2
+#     shield: ky113_right
+#     artifact-name: ky113_M2_2_Right
 
-  # - board: nice_nano_v2
-  #   shield: settings_reset
-  #   artifact-name: ky113_settings_reset
+
+# # 三、dongle+【左、右、PAD三分体方案】
+#   - board: nice_nano_v2
+#     shield: ky113_dongleh display_091_drumh
+#     artifact-name: ky113_M3_1_DongleWithDrumH
+#   - board: nice_nano_v2
+#     shield: ky113_left
+#     cmake-args: -DCONFIG_ZMK_DISPLAY=y -DCONFIG_ZMK_SPLIT_ROLE_CENTRAL=n
+#     artifact-name: ky113_M3_2_Left_central
+#   - board: nice_nano_v2
+#     shield: ky113_right
+#     artifact-name: ky113_M3_3_Right
+#   - board: nice_nano_v2
+#     shield: ky113_pad
+#     cmake-args: -DCONFIG_ZMK_SPLIT_ROLE_CENTRAL=n
+#     artifact-name: ky113_M3_4__Pad
+
+# # 四、dongle+【左、右分体方案】
+#   - board: nice_nano_v2
+#     shield: ky113_dongleh display_091_drumh
+#     cmake-args: -DCONFIG_ZMK_SPLIT_BLE_CENTRAL_PERIPHERALS=2
+#     artifact-name: ky113_M4_1_DongleWithDrumH
+#   - board: nice_nano_v2
+#     shield: ky113_left
+#     cmake-args: -DCONFIG_ZMK_DISPLAY=y -DCONFIG_ZMK_SPLIT_ROLE_CENTRAL=n
+#     artifact-name: ky113_M4_2_Left_central
+#   - board: nice_nano_v2
+#     shield: ky113_right
+#     artifact-name: ky113_M4_3_Right
+
+# # 五、【PAD方案】
+#   - board: nice_nano_v2
+#     shield: ky113_pad
+#     artifact-name: ky113_M5_Pad_central
+
+# # 六、【重置固件方案】
+#   - board: nice_nano_v2
+#     shield: settings_reset
+#     artifact-name: ky113_M6_settings_reset
