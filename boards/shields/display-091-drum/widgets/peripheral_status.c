@@ -82,7 +82,7 @@ int zmk_widget_peripheral_status_init(struct zmk_widget_peripheral_status *widge
         lv_canvas_set_buffer(image_canvas, connect_image_buffer[i], 14, 9, LV_IMG_CF_TRUE_COLOR);
         lv_obj_align(image_canvas, LV_ALIGN_TOP_LEFT, i*14+2, 0);
         lv_img_set_src(image_canvas, &disconnect_icon);
-        lv_obj_add_flag(image_canvas, LV_OBJ_FLAG_HIDDEN);
+        // lv_obj_add_flag(image_canvas, LV_OBJ_FLAG_HIDDEN);
     }
     sys_slist_append(&widgets, &widget->node);
 

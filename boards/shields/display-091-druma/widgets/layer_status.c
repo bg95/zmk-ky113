@@ -71,40 +71,41 @@ enum layers_symbol {
     layers_symbol_layer_label
 };
 
-static void set_layer_symbol(lv_obj_t *widget, struct layer_status_state state) {
-    lv_obj_t *layer_num = lv_obj_get_child(widget, layers_symbol_layer_num);
-    lv_img_set_src(layer_num, layers_num[state.index]);
-}
+// static void set_layer_symbol(lv_obj_t *widget, struct layer_status_state state) {
+//     lv_obj_t *layer_num = lv_obj_get_child(widget, layers_symbol_layer_num);
+//     lv_img_set_src(layer_num, layers_num[state.index]);
+// }
 
-// static void set_layer_symbol(lv_obj_t *label, struct layer_status_state state) {
-//     if (state.label == NULL) {
-//         char text[7] = {};
+static void set_layer_symbol(lv_obj_t *label, struct layer_status_state state) {
 
-//         sprintf(text, "%i", state.index);
-
-//         lv_label_set_text(label, text);
-//     } else {
-//         char text[13] = {};
-
-//         snprintf(text, sizeof(text), "%s", state.label);
-
-//         lv_label_set_text(label, text);
-//     }
-    
     // 设置标签的旋转角度
-    // lv_obj_set_style_transform_angle(label, LV_OBJ_PART_MAIN, LV_STATE_DEFAULT, 900);
- 
+    // lv_obj_set_style_transform_angle(label, LV_PART_MAIN, LV_STATE_DEFAULT, 900);
+    
     // 设置标签的中心点，旋转将围绕这个点进行
     // lv_obj_set_style_local_transform_origin(label, LV_OBJ_PART_MAIN, LV_STATE_DEFAULT, LV_TRANSFORM_ORIGIN_CENTER);
  
     // 设置标签的位置
-    // lv_obj_set_pos(label, 2, 2); // 根据需要调整位置
-// }
+    // lv_obj_set_pos(label, 60, 6); // 根据需要调整位置
 
-// static void layer_status_update_cb(struct layer_status_state state) {
-//     struct zmk_widget_layer_status *widget;
-//     SYS_SLIST_FOR_EACH_CONTAINER(&widgets, widget, node) { set_layer_symbol(widget->obj, state); }
-// }
+    if (state.label == NULL) {
+        char text[7] = {};
+
+        sprintf(text, "%i", state.index);
+
+        lv_label_set_text(label, text);
+    } else {
+        char text[13] = {};
+
+        snprintf(text, sizeof(text), "%s", state.label);
+
+        lv_label_set_text(label, text);
+    }
+    // lv_obj_align(label, LV_ALIGN_CENTER, 0, 0);
+    // lv_obj_center(label);
+    // lv_obj_set_style_transform_angle(label, 50, 0);f
+    
+ 
+}
 
 static void layer_status_update_cb(struct layer_status_state state) {
     struct zmk_widget_layer_status *widget;
@@ -124,32 +125,41 @@ ZMK_DISPLAY_WIDGET_LISTENER(widget_layer_status, struct layer_status_state, laye
 
 ZMK_SUBSCRIPTION(widget_layer_status, zmk_layer_state_changed);
 
+int zmk_widget_layer_status_init(struct zmk_widget_layer_status *widget, lv_obj_t *parent) {
+    widget->obj = lv_label_create(parent);
+    // lv_obj_set_size(widget->obj, 32, 16);
+    // lv_obj_align(widget->obj, LV_ALIGN_TOP_LEFT, 0, 0);
+    sys_slist_append(&widgets, &widget->node);
+
+    widget_layer_status_init();
+    return 0;
+}
+
 // int zmk_widget_layer_status_init(struct zmk_widget_layer_status *widget, lv_obj_t *parent) {
 //     widget->obj = lv_label_create(parent);
-
 //     sys_slist_append(&widgets, &widget->node);
 
 //     widget_layer_status_init();
 //     return 0;
 // }
 
-int zmk_widget_layer_status_init(struct zmk_widget_layer_status *widget, lv_obj_t *parent) {
+// int zmk_widget_layer_status_init(struct zmk_widget_layer_status *widget, lv_obj_t *parent) {
     
-    widget->obj = lv_obj_create(parent);
-    lv_obj_set_size(widget->obj, LV_SIZE_CONTENT, LV_SIZE_CONTENT);
+//     widget->obj = lv_obj_create(parent);
+//     lv_obj_set_size(widget->obj, LV_SIZE_CONTENT, LV_SIZE_CONTENT);
 
-    lv_obj_t *layer_num = lv_img_create(widget->obj);
-    lv_obj_align(layer_num, LV_ALIGN_TOP_LEFT, 0, 0);
-    lv_img_set_src(layer_num, layers_num[0]);
+    // lv_obj_t *layer_num = lv_img_create(widget->obj);
+    // lv_obj_align(layer_num, LV_ALIGN_TOP_LEFT, 0, 0);
+    // lv_img_set_src(layer_num, layers_num[0]);
 
-    //lv_obj_t *layer_label = lv_label_create(parent);
-    //lv_obj_align(layer_label, LV_ALIGN_TOP_LEFT, 0, 0);
+//     lv_obj_t *layer_label = lv_label_create(parent);
+//     lv_obj_align(layer_label, LV_ALIGN_TOP_LEFT, 0, 0);
     
-    sys_slist_append(&widgets, &widget->node);
+//     sys_slist_append(&widgets, &widget->node);
 
-    widget_layer_status_init();
-    return 0;
-}
+//     widget_layer_status_init();
+//     return 0;
+// }
 
 lv_obj_t *zmk_widget_layer_status_obj(struct zmk_widget_layer_status *widget) {
     return widget->obj;
