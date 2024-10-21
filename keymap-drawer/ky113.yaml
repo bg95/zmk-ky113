@@ -15,7 +15,7 @@ layers:
   - F12
   - {t: number, h: toggle}
   - MUTE
-  - ESC
+  - '&StartPwd'
   - TAB
   - BSPC
   - '='
