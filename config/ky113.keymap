@@ -36,6 +36,13 @@
             bindings = <&kp END &kp SEMI &kp ENTER>;
             label = "END_SEMI_ENTER";
         };
+
+        StartPwd: StartPwd {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&none &kp N1 &kp N2 &kp N3 &kp N6 &kp N5 &kp N4 &end_enter>;
+            label = "STARTPWD";
+        };
     };
 
     behaviors {
@@ -147,7 +154,6 @@
             key-positions = <80 79>;
             timeout-ms = <200>;
         };
-
     };
 
     keymap {
@@ -163,7 +169,7 @@
             //  |3     |LCTRL |LGUI|LALT|&lt 2 DEL|&lt 1 SPACE|    |    |    |    |&lt 1 SPACE|&lt 3 INS|RALT|RCTRL|LEFT  |DOWN |    |RIGHT |    |&lt 2 KP_N0|&lt 2 KP_N0|&lt 5 KP_DOT|ENTER|
 
             bindings = <
-&kp ESC     &kp F1      &kp F2    &kp F3    &kp F4     &kp F5       &kp F6       &kp F7     &kp F8    &kp F9     &kp F10   &kp F11    &kp F12     &to 1        &kp C_MUTE   &kp ESC       &kp TAB       &kp BSPC         &kp EQUAL
+&kp ESC     &kp F1      &kp F2    &kp F3    &kp F4     &kp F5       &kp F6       &kp F7     &kp F8    &kp F9     &kp F10   &kp F11    &kp F12     &to 1        &kp C_MUTE   &StartPwd     &kp TAB       &kp BSPC         &kp EQUAL
 &kp GRAVE   &kp N1      &kp N2    &kp N3    &kp N4     &kp N5       &kp N6       &kp N7     &kp N8    &kp N9     &kp N0    &kp MINUS  &kp EQUAL   &kp BSPC     &kp HOME     &kp KP_NLCK   &kp KP_SLASH  &kp KP_MULTIPLY  &kp KP_MINUS
 &kp C_MUTE  &kp TAB     &kp Q     &kp W     &kp E      &kp R        &kp T        &kp Y      &kp U     &kp I      &kp O     &kp P      &kp LBKT    &kp RBKT     &kp BSLH     &kp END       &kp KP_N7     &kp KP_N8        &kp KP_N9     &kp KP_PLUS
 &kp LC(V)   &kp CAPS    &kp A     &kp S     &kp D      &lt 2 F      &kp G        &kp H      &kp J     &kp K      &kp L     &kp SEMI   &kp SQT     &kp ENTER    &kp PG_UP    &kp KP_N4     &kp KP_N5     &kp KP_N6        &kp KP_PLUS
@@ -279,7 +285,6 @@
 &trans  &trans  &trans  &trans  &trans  &trans  &trans  &mmv MOVE_LEFT  &mmv MOVE_RIGHT  &mmv MOVE_DOWN  &trans     &trans  &trans  &trans  &trans  &trans     &trans  &trans  &trans
 &trans  &trans  &trans  &trans  &trans  &trans  &trans  &mkp MCLK       &mkp MB4         &mkp MB5        &trans     &trans  &trans  &trans  &trans  &to 1      &to 0   &trans  &trans
 &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans          &trans           &trans          &trans     &trans  &trans  &trans  &trans  &trans     &trans
-
             >;
 
             label = "Mouse";
