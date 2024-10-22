@@ -174,15 +174,15 @@ layers:
   - KP 7
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - KP SLASH
-  - KP MULTIPLY
-  - KP MINUS
-  - KP PLUS
-  - ENTER
-  - KP PLUS
-  - '1'
-  - '2'
-  - '3'
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -213,7 +213,7 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - Ctl+Sft+ HOME
+  - ''
   - Ctl+Sft+ END
   - {t: BACKSPACE, type: held}
   - BACKSPACE
