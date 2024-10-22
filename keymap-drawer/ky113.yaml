@@ -16,9 +16,9 @@ layers:
   - PRINTSCREEN
   - DELETE
   - '&StartPwd'
-  - TAB
-  - BSPC
-  - '='
+  - '&Gmail'
+  - '&Qmail'
+  - '&Phone'
   - '`'
   - '1'
   - '2'
@@ -34,10 +34,10 @@ layers:
   - '='
   - BSPC
   - PG UP
-  - KP NLCK
-  - KP SLASH
-  - KP MULTIPLY
-  - KP MINUS
+  - '&Pwd_B'
+  - '&Pwd_H'
+  - ''
+  - ''
   - MUTE
   - TAB
   - Q
@@ -56,8 +56,8 @@ layers:
   - PAGE DOWN
   - Ctl+Alt+ DELETE
   - Sft+Ctl+ DELETE
-  - KP 9
-  - KP PLUS
+  - ''
+  - ''
   - Sft+ DELETE
   - LEFT CONTROL
   - A
@@ -73,10 +73,10 @@ layers:
   - ''''
   - ENTER
   - HOME
-  - KP 4
-  - KP 5
-  - KP 6
-  - KP PLUS
+  - ''
+  - ''
+  - ''
+  - ''
   - Ctl+Alt+ A
   - LSHIFT
   - Z
@@ -92,10 +92,10 @@ layers:
   - ENTER
   - UP
   - END
-  - KP 1
-  - KP 2
-  - KP 3
-  - KP ENTER
+  - ''
+  - ''
+  - ''
+  - ''
   - Gui+ L
   - ESC
   - LEFT ALT
@@ -109,10 +109,10 @@ layers:
   - LEFT
   - DOWN
   - RIGHT
-  - {t: KP 0, h: function}
-  - {t: KP 0, h: function}
-  - {t: KP DOT, h: mouse}
-  - KP ENTER
+  - ''
+  - ''
+  - ''
+  - ''
   number:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -670,8 +670,7 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - {type: held}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -682,6 +681,7 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {type: held}
+  - {t: ▽, type: trans}
   - {t: ▽, type: trans}
 combos:
 - p: [19, 20]
