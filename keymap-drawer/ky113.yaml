@@ -401,7 +401,7 @@ layers:
   - UP
   - HOME
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - CAPS
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
