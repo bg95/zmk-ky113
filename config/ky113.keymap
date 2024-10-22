@@ -273,7 +273,7 @@
 &trans     &trans    &trans    &trans    &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &to 4   &trans  &trans  &trans     &trans     &trans
 &kp CARET  &kp AMPS  &kp STAR  &kp LPAR  &kp RPAR  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans     &trans     &trans
 &trans     &trans    &trans    &trans    &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans     &kp PG_UP  &kp UP     &kp HOME
-&trans     &trans    &trans    &trans    &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &kp LEFT   &trans     &kp RIGHT
+&trans     &kp CAPS  &trans    &trans    &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &kp LEFT   &trans     &kp RIGHT
 &trans     &trans    &trans    &trans    &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &kp PG_DN  &kp DOWN   &kp END
 &trans     &trans    &trans    &trans    &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
             >;
