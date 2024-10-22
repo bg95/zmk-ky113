@@ -23,24 +23,10 @@
 
 / {
     macros {
-        end_enter: end_enter {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp END &kp ENTER>;
-            label = "END_ENTER";
-        };
-
-        end_semi_enter: end_semi_enter {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp END &kp SEMI &kp ENTER>;
-            label = "END_SEMI_ENTER";
-        };
-
         StartPwd: StartPwd {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp N1 &kp N2 &kp N3 &kp N6 &kp N5 &kp N4 &end_enter>;
+            bindings = <&kp N1 &kp N2 &kp N3 &kp N6 &kp N5 &kp N4 &kp ENTER>;
             label = "STARTPWD";
         };
 
