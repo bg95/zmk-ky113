@@ -571,9 +571,11 @@ path.combo {
 </g>
 <g transform="translate(1134, 322)" class="key keypos-109">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
+<text x="0" y="0" class="key tap">ENTER</text>
 </g>
 <g transform="translate(1190, 322)" class="key keypos-110">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
+<text x="0" y="0" class="key tap">ENTER</text>
 </g>
 <g transform="translate(1246, 322)" class="key keypos-111">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
