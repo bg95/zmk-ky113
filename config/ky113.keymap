@@ -248,12 +248,12 @@
             //  |    |    |    |    |    |    |    |    |    |    |     |     |     |    |    |     |    |    |    |    |    |     |    |
 
             bindings = <
-&trans  &trans  &trans          &trans           &trans           &trans  &trans   &trans          &trans           &trans    &trans      &trans           &trans  &to 3   &trans  &trans    &trans    &trans     &trans
-&trans  &kp F1  &kp F2          &kp F3           &kp F4           &kp F5  &trans   &trans          &trans           &trans    &trans      &trans           &trans  &trans  &trans  &trans    &trans    &trans     &trans
-&trans  &trans  &kp F6          &mt F7 UP_ARROW  &kp F8           &kp F9  &kp F10  &trans          &kp HOME         &kp UP    &kp END     &trans           &trans  &trans  &trans  &trans    &kp HOME  &kp UP     &kp PG_UP  &trans
-&trans  &trans  &kp LEFT_ARROW  &kp DOWN_ARROW   &kp RIGHT_ARROW  &trans  &kp F11  &kp LEFT_ARROW  &kp RIGHT_ARROW  &kp DOWN  &end_enter  &end_semi_enter  &trans  &trans  &trans  &kp LEFT  &trans    &kp RIGHT  &trans
-&trans  &trans  &trans          &trans           &trans           &trans  &kp F12  &kp PG_DN       &kp PG_UP        &trans    &trans      &trans           &trans  &trans  &trans  &kp END   &kp DOWN  &kp PG_DN  &trans
-&trans  &trans  &trans          &trans           &trans           &trans  &trans   &trans          &trans           &trans    &trans      &trans           &trans  &trans  &trans  &trans    &trans
+&trans  &trans    &trans          &trans           &trans           &trans  &trans   &trans          &trans           &trans    &trans      &trans           &trans  &to 3   &trans  &trans    &trans    &trans     &trans
+&trans  &kp F1    &kp F2          &kp F3           &kp F4           &kp F5  &trans   &trans          &trans           &trans    &trans      &trans           &trans  &trans  &trans  &trans    &trans    &trans     &trans
+&trans  &trans    &kp F6          &mt F7 UP_ARROW  &kp F8           &kp F9  &kp F10  &trans          &kp HOME         &kp UP    &kp END     &trans           &trans  &trans  &trans  &trans    &kp HOME  &kp UP     &kp PG_UP  &trans
+&trans  &kp CAPS  &kp LEFT_ARROW  &kp DOWN_ARROW   &kp RIGHT_ARROW  &trans  &kp F11  &kp LEFT_ARROW  &kp RIGHT_ARROW  &kp DOWN  &end_enter  &end_semi_enter  &trans  &trans  &trans  &kp LEFT  &trans    &kp RIGHT  &trans
+&trans  &trans    &trans          &trans           &trans           &trans  &kp F12  &kp PG_DN       &kp PG_UP        &trans    &trans      &trans           &trans  &trans  &trans  &kp END   &kp DOWN  &kp PG_DN  &trans
+&trans  &trans    &trans          &trans           &trans           &trans  &trans   &trans          &trans           &trans    &trans      &trans           &trans  &trans  &trans  &trans    &trans
             >;
 
             label = "Function";
