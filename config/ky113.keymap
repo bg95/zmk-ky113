@@ -248,12 +248,12 @@
             //  |    |    |    |    |    |    |    |    |    |    |     |     |     |    |    |     |    |    |    |    |    |     |    |
 
             bindings = <
-&trans  &trans    &trans          &trans           &trans           &trans  &trans   &trans          &trans           &trans    &trans      &trans           &trans  &to 3   &trans  &trans    &trans    &trans     &trans
-&trans  &kp F1    &kp F2          &kp F3           &kp F4           &kp F5  &trans   &trans          &trans           &trans    &trans      &trans           &trans  &trans  &trans  &trans    &trans    &trans     &trans
-&trans  &trans    &kp F6          &mt F7 UP_ARROW  &kp F8           &kp F9  &kp F10  &trans          &kp HOME         &kp UP    &kp END     &trans           &trans  &trans  &trans  &trans    &kp HOME  &kp UP     &kp PG_UP  &trans
-&trans  &kp CAPS  &kp LEFT_ARROW  &kp DOWN_ARROW   &kp RIGHT_ARROW  &trans  &kp F11  &kp LEFT_ARROW  &kp RIGHT_ARROW  &kp DOWN  &end_enter  &end_semi_enter  &trans  &trans  &trans  &kp LEFT  &trans    &kp RIGHT  &trans
-&trans  &trans    &trans          &trans           &trans           &trans  &kp F12  &kp PG_DN       &kp PG_UP        &trans    &trans      &trans           &trans  &trans  &trans  &kp END   &kp DOWN  &kp PG_DN  &trans
-&trans  &trans    &trans          &trans           &trans           &trans  &trans   &trans          &trans           &trans    &trans      &trans           &trans  &trans  &trans  &trans    &trans
+&trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &to 3   &trans  &trans  &trans  &trans  &trans
+&trans  &none     &none   &none   &none   &none   &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans    &none   &none   &none   &none   &none   &trans  &none   &none   &none   &trans  &trans  &trans  &trans  &trans  &none   &none   &none   &trans
+&trans  &kp CAPS  &none   &none   &none   &trans  &none   &none   &none   &none   &none   &none   &trans  &trans  &trans  &none   &trans  &none   &trans
+&trans  &trans    &trans  &trans  &trans  &trans  &none   &none   &none   &trans  &trans  &trans  &trans  &trans  &trans  &none   &none   &none   &trans
+&trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
             >;
 
             label = "Function";
@@ -270,12 +270,12 @@
             //  |    |    |    |    |    |    |    |    |    |    |    |    |    |    |    |     |    |    |    |    |     |    |     |
 
             bindings = <
-&trans     &trans    &trans    &trans    &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &to 4   &trans  &trans  &trans     &trans     &trans
-&kp CARET  &kp AMPS  &kp STAR  &kp LPAR  &kp RPAR  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans     &trans     &trans
-&trans     &trans    &trans    &trans    &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans     &kp PG_UP  &kp UP     &kp HOME
-&trans     &kp CAPS  &trans    &trans    &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &kp LEFT   &trans     &kp RIGHT
-&trans     &trans    &trans    &trans    &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &kp PG_DN  &kp DOWN   &kp END
-&trans     &trans    &trans    &trans    &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &to 4   &trans  &trans  &trans  &trans  &trans
+&none   &none     &none   &none   &none   &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &none   &none   &none
+&trans  &kp CAPS  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &none   &trans  &none
+&trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &none   &none   &none
+&trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
             >;
 
             label = "Symbol";
@@ -314,12 +314,12 @@
             //  |    |    |    |    |    |    |    |    |    |              |               |              |         |    |    |    |    |    |    |         |     |    |    |
 
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans          &trans           &trans          &trans     &trans  &trans  &to 0   &trans  &soft_off  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans          &trans           &trans          &trans     &trans  &trans  &trans  &trans  &trans     &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans          &mkp LCLK        &mmv MOVE_UP    &mkp RCLK  &trans  &trans  &trans  &trans  &trans     &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &mmv MOVE_LEFT  &mmv MOVE_RIGHT  &mmv MOVE_DOWN  &trans     &trans  &trans  &trans  &trans  &trans     &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &mkp MCLK       &mkp MB4         &mkp MB5        &trans     &trans  &trans  &trans  &trans  &to 1      &to 0   &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans          &trans           &trans          &trans     &trans  &trans  &trans  &trans  &trans     &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans          &trans           &trans          &trans     &trans  &trans  &to 0   &trans  &none   &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans          &trans           &trans          &trans     &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans          &mkp LCLK        &mmv MOVE_UP    &mkp RCLK  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &mmv MOVE_LEFT  &mmv MOVE_RIGHT  &mmv MOVE_DOWN  &trans     &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &mkp MCLK       &mkp MB4         &mkp MB5        &trans     &trans  &trans  &trans  &trans  &none   &none   &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans          &trans           &trans          &trans     &trans  &trans  &trans  &trans  &trans  &trans
             >;
 
             label = "Mouse";
