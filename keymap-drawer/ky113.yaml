@@ -2,9 +2,11 @@ layers:
   qwerty: [ESC, F1, F2, F3, F4, F5, F6, F7, F8, F9, F10, F11, F12, PRINTSCREEN, DELETE, '&StartPwd', '&Gmail', '&Qmail', '&Phone', '`', '1', '2', '3', '4', '5', '6',
     '7', '8', '9', '0', '-', '=', BSPC, PG UP, '&Pwd_B', '&Pwd_H', '', '', MUTE, TAB, Q, W, E, R, T, Y, U, I, O, P, '[', ']', \, PAGE DOWN, Ctl+Alt+ DELETE, Sft+Ctl+
       DELETE, '', '', Sft+ DELETE, LEFT CONTROL, A, S, D, F, G, H, J, K, L, ;, '''', ENTER, HOME, '', '', '', '', Ctl+Alt+ A, LSHIFT, Z, X, C, V, B, N, M, ',', .,
-    /, ENTER, UP, END, '', '', '', '', '', ESC, LEFT ALT, LEFT GUI, number, SPACE, SPACE, function, symbol, control, LEFT, DOWN, RIGHT, ENTER, ENTER, '', '']
+    /, ENTER, UP, END, '', '', '', '', '', ESC, LEFT ALT, LEFT GUI, number, SPACE, SPACE, symbol, media, control, LEFT, DOWN, RIGHT, ENTER, ENTER, '', '']
   number:
   - {t: ▽, type: trans}
+  - BRI INC
+  - BRI DEC
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -15,9 +17,7 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: function, h: toggle}
+  - {t: symbol, h: toggle}
   - {t: ▽, type: trans}
   - ''
   - ''
@@ -83,16 +83,16 @@ layers:
   - ''
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - +
-  - '-'
-  - '*'
-  - /
+  - UP ARROW
+  - DOWN
+  - PAGE UP
+  - PG DN
   - ''
   - ''
   - ''
-  - ''
-  - ''
-  - ''
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -117,7 +117,7 @@ layers:
   - ''
   - ''
   - ''
-  function:
+  symbol:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -131,27 +131,7 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {t: symbol, h: toggle}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - {t: media, h: toggle}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -164,6 +144,26 @@ layers:
   - ''
   - ''
   - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - {t: ▽, type: trans}
   - ''
   - ''
   - ''
@@ -177,7 +177,7 @@ layers:
   - ''
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - '~'
+  - {t: ▽, type: trans}
   - '!'
   - '@'
   - '#'
@@ -231,7 +231,7 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  symbol:
+  media:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -385,7 +385,7 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - EP TOG
+  - ''
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - ''
@@ -424,7 +424,7 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - OUT TOG
+  - ''
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
