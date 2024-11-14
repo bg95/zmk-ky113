@@ -5,8 +5,8 @@ layers:
     /, ENTER, UP, END, '', '', '', '', '', ESC, LEFT GUI, LEFT ALT, number, SPACE, SPACE, symbol, media, control, LEFT, DOWN, RIGHT, ENTER, ENTER, '', '']
   number:
   - {t: ▽, type: trans}
-  - Sft+ BRI DN
-  - BRI INC
+  - ''
+  - ''
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -252,8 +252,8 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - ''
-  - ''
-  - ''
+  - BRI DEC
+  - BRI INC
   - ''
   - ''
   - {t: ▽, type: trans}
