@@ -1,12 +1,122 @@
 layers:
-  qwerty: [ESC, F1, F2, F3, F4, F5, F6, F7, F8, F9, F10, F11, F12, PRINTSCREEN, DELETE, '&StartPwd', '&Gmail', '&Qmail', '&Phone', '`', '1', '2', '3', '4', '5', '6',
-    '7', '8', '9', '0', '-', '=', BSPC, PG UP, '&Pwd_B', '&Pwd_H', '', '', MUTE, TAB, Q, W, E, R, T, Y, U, I, O, P, '[', ']', \, PAGE DOWN, Ctl+Alt+ DELETE, Sft+Ctl+
-      DELETE, '', '', Sft+ DELETE, LEFT CONTROL, A, S, D, F, G, H, J, K, L, ;, '''', ENTER, HOME, '', '', '', '', Ctl+Alt+ A, LSHIFT, Z, X, C, V, B, N, M, ',', .,
-    /, ENTER, UP, END, '', '', '', '', '', ESC, LEFT GUI, LEFT ALT, number, SPACE, SPACE, symbol, media, control, LEFT, DOWN, RIGHT, ENTER, ENTER, '', '']
+  qwerty:
+  - ESC
+  - F1
+  - F2
+  - F3
+  - F4
+  - F5
+  - F6
+  - F7
+  - F8
+  - F9
+  - F10
+  - F11
+  - F12
+  - PRINTSCREEN
+  - DELETE
+  - '&StartPwd'
+  - '&Gmail'
+  - '&Qmail'
+  - '&Phone'
+  - '`'
+  - '1'
+  - '2'
+  - '3'
+  - '4'
+  - '5'
+  - '6'
+  - '7'
+  - '8'
+  - '9'
+  - '0'
+  - '-'
+  - '='
+  - BSPC
+  - PG UP
+  - '&Pwd_B'
+  - '&Pwd_H'
+  - ''
+  - ''
+  - MUTE
+  - TAB
+  - Q
+  - W
+  - E
+  - R
+  - T
+  - Y
+  - U
+  - I
+  - O
+  - P
+  - '['
+  - ']'
+  - \
+  - PAGE DOWN
+  - Ctl+Alt+ DELETE
+  - Sft+Ctl+ DELETE
+  - ''
+  - ''
+  - {t: pali, h: toggle}
+  - LEFT CONTROL
+  - A
+  - S
+  - D
+  - F
+  - G
+  - H
+  - J
+  - K
+  - L
+  - ;
+  - ''''
+  - ENTER
+  - HOME
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - LSHIFT
+  - Z
+  - X
+  - C
+  - V
+  - B
+  - N
+  - M
+  - ','
+  - .
+  - /
+  - ENTER
+  - UP
+  - END
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ESC
+  - LEFT GUI
+  - LEFT ALT
+  - number
+  - SPACE
+  - SPACE
+  - symbol
+  - media
+  - control
+  - LEFT
+  - DOWN
+  - RIGHT
+  - ENTER
+  - ENTER
+  - ''
+  - ''
   number:
   - {t: ▽, type: trans}
-  - ''
-  - ''
+  - BRI DEC
+  - BRI UP
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -17,33 +127,33 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {t: symbol, h: toggle}
-  - {t: ▽, type: trans}
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - Ctl+Alt+ A
   - {t: ▽, type: trans}
   - ''
   - ''
   - ''
   - ''
+  - ''
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - ''
+  - ''
+  - ''
+  - ''
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
   - ''
   - ''
   - ''
@@ -131,7 +241,7 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {t: media, h: toggle}
+  - ''
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -245,15 +355,15 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {t: control, h: toggle}
+  - ''
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - ''
-  - BRI DEC
-  - BRI INC
+  - ''
+  - ''
   - ''
   - ''
   - {t: ▽, type: trans}
@@ -359,7 +469,7 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - '&bootloader'
-  - {t: mouse, h: toggle}
+  - ''
   - BT CLR ALL
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -459,7 +569,7 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  mouse:
+  pali:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -473,7 +583,7 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {t: qwerty, h: toggle}
+  - ''
   - {t: ▽, type: trans}
   - ''
   - {t: ▽, type: trans}
@@ -503,16 +613,12 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - '&mkp LCLK'
-  - '&mmv MOVE_UP'
-  - '&mkp RCLK'
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - Ctl+Alt+ R
+  - Ctl+Alt+ T
+  - Ctl+Alt+ Y
+  - Ctl+Alt+ U
+  - Ctl+Alt+ I
+  - ''
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -522,17 +628,17 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
+  - {t: qwerty, h: toggle}
   - {t: ▽, type: trans}
+  - Ctl+Alt+ A
+  - Ctl+Alt+ S
+  - Ctl+Alt+ D
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - '&mmv MOVE_LEFT'
-  - '&mmv MOVE_RIGHT'
-  - '&mmv MOVE_DOWN'
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - Ctl+Alt+ G
+  - Ctl+Alt+ H
+  - ''
+  - ''
+  - Ctl+Alt+ L
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -544,9 +650,13 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - '&mkp MCLK'
-  - '&mkp MB4'
-  - '&mkp MB5'
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - Ctl+Alt+ N
+  - Ctl+Alt+ M
+  - ''
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
