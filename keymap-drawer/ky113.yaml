@@ -1,119 +1,10 @@
+layout: {zmk_keyboard: ky113}
 layers:
-  qwerty:
-  - ESC
-  - F1
-  - F2
-  - F3
-  - F4
-  - F5
-  - F6
-  - F7
-  - F8
-  - F9
-  - F10
-  - F11
-  - F12
-  - PRINTSCREEN
-  - DELETE
-  - '&StartPwd'
-  - '&Gmail'
-  - '&Qmail'
-  - '&Phone'
-  - '`'
-  - '1'
-  - '2'
-  - '3'
-  - '4'
-  - '5'
-  - '6'
-  - '7'
-  - '8'
-  - '9'
-  - '0'
-  - '-'
-  - '='
-  - BSPC
-  - PG UP
-  - '&Pwd_B'
-  - '&Pwd_H'
-  - ''
-  - ''
-  - MUTE
-  - TAB
-  - Q
-  - W
-  - E
-  - R
-  - T
-  - Y
-  - U
-  - I
-  - O
-  - P
-  - '['
-  - ']'
-  - \
-  - PAGE DOWN
-  - Ctl+Alt+ DELETE
-  - Sft+Ctl+ DELETE
-  - ''
-  - ''
-  - {t: pali, h: toggle}
-  - LEFT CONTROL
-  - A
-  - S
-  - D
-  - F
-  - G
-  - H
-  - J
-  - K
-  - L
-  - ;
-  - ''''
-  - ENTER
-  - HOME
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - LSHIFT
-  - Z
-  - X
-  - C
-  - V
-  - B
-  - N
-  - M
-  - ','
-  - .
-  - /
-  - ENTER
-  - UP
-  - END
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ESC
-  - LEFT GUI
-  - LEFT ALT
-  - number
-  - SPACE
-  - SPACE
-  - symbol
-  - media
-  - control
-  - LEFT
-  - DOWN
-  - RIGHT
-  - ENTER
-  - ENTER
-  - ''
-  - ''
-  number:
+  Qwerty: [ESC, F1, F2, F3, F4, F5, F6, F7, F8, F9, F10, F11, F12, PRINTSCREEN, DELETE, '&StartPwd', '&Gmail', '&Qmail', '&Phone', '`', '1', '2', '3', '4', '5', '6',
+    '7', '8', '9', '0', '-', '=', BSPC, PG UP, '&Pwd_B', '&Pwd_H', '', '', MUTE, TAB, Q, W, E, R, T, Y, U, I, O, P, '[', ']', \, PAGE DOWN, Ctl+Alt+DELETE, Sft+Ctl+DELETE,
+    '', '', Ctl+A, LEFT CONTROL, A, S, D, F, G, H, J, K, L, ;, '''', ENTER, HOME, '', '', '', '', Ctl+C, LSHIFT, Z, X, C, V, B, N, M, ',', ., /, ENTER, UP, END, '',
+    '', '', '', Ctl+V, ESC, LEFT GUI, LEFT ALT, Number, SPACE, SPACE, symbol, Media, Control, LEFT, DOWN, RIGHT, ENTER, ENTER, '', '']
+  Number:
   - {t: ▽, type: trans}
   - BRI DEC
   - BRI UP
@@ -127,7 +18,7 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - Ctl+Alt+ A
+  - Ctl+Alt+A
   - {t: ▽, type: trans}
   - ''
   - ''
@@ -341,7 +232,7 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  media:
+  Media:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -455,7 +346,7 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  control:
+  Control:
   - '&bootloader'
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -613,11 +504,11 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - Ctl+Alt+ R
-  - Ctl+Alt+ T
-  - Ctl+Alt+ Y
-  - Ctl+Alt+ U
-  - Ctl+Alt+ I
+  - Ctl+Alt+R
+  - Ctl+Alt+T
+  - Ctl+Alt+Y
+  - Ctl+Alt+U
+  - Ctl+Alt+I
   - ''
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -628,17 +519,17 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {t: qwerty, h: toggle}
+  - {t: Qwerty, h: toggle}
   - {t: ▽, type: trans}
-  - Ctl+Alt+ A
-  - Ctl+Alt+ S
-  - Ctl+Alt+ D
+  - Ctl+Alt+A
+  - Ctl+Alt+S
+  - Ctl+Alt+D
   - {t: ▽, type: trans}
-  - Ctl+Alt+ G
-  - Ctl+Alt+ H
+  - Ctl+Alt+G
+  - Ctl+Alt+H
   - ''
   - ''
-  - Ctl+Alt+ L
+  - Ctl+Alt+L
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -654,8 +545,8 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - Ctl+Alt+ N
-  - Ctl+Alt+ M
+  - Ctl+Alt+N
+  - Ctl+Alt+M
   - ''
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
