@@ -1,24 +1,24 @@
 layout: {zmk_keyboard: ky113}
 layers:
   Qwerty: [ESC, F1, F2, F3, F4, F5, F6, F7, F8, F9, F10, F11, F12, PRINTSCREEN, DELETE, '&StartPwd', '&Gmail', '&Qmail', '&Phone', '`', '1', '2', '3', '4', '5', '6',
-    '7', '8', '9', '0', '-', '=', BSPC, HOME, '&Pwd_B', '&Pwd_H', '', '', MUTE, TAB, Q, W, E, R, T, Y, U, I, O, P, '[', ']', \, END, Ctl+Alt+DELETE, Sft+Ctl+DELETE,
-    '', '', Ctl+A, CAPSLOCK, A, S, D, F, G, H, J, K, L, ;, '''', ENTER, PG UP, '', '', '', '', Ctl+C, LSHIFT, Z, X, C, V, B, N, M, ',', ., /, RSHIFT, UP, PG DN, '',
-    '', '', '', Ctl+V, LCTRL, LEFT GUI, LEFT ALT, Number, SPACE, SPACE, RIGHT ALT, Control, RIGHT CONTROL, LEFT, DOWN, RIGHT, ENTER, ENTER, '', '']
+    '7', '8', '9', '0', '-', '=', BSPC, HOME, '&Pwd_B', '&Pwd_H', '', '', F13, TAB, Q, W, E, R, T, Y, U, I, O, P, '[', ']', \, END, Ctl+Alt+DELETE, Sft+Ctl+DELETE,
+    '', '', F14, CAPSLOCK, A, S, D, F, G, H, J, K, L, ;, '''', ENTER, PG UP, '', '', '', '', F15, LSHIFT, Z, X, C, V, B, N, M, ',', ., /, RSHIFT, UP, PG DN, '', '',
+    '', '', F16, LCTRL, LEFT GUI, LEFT ALT, Number, SPACE, SPACE, RIGHT ALT, Control, RIGHT CONTROL, LEFT, DOWN, RIGHT, ENTER, ENTER, '', '']
   Number:
   - {t: ▽, type: trans}
-  - BRI DEC
+  - MUTE
+  - PREV
+  - PLAY PAUSE
+  - NEXT
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - BRI DN
   - BRI UP
+  - Gui+P
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - Ctl+Alt+A
+  - Gui+Sft+S
   - {t: ▽, type: trans}
   - ''
   - ''
