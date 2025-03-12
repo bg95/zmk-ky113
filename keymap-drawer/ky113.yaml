@@ -10,8 +10,8 @@ layers:
   - PREV
   - PLAY PAUSE
   - NEXT
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - VOL DN
+  - VOL UP
   - BRI DN
   - BRI UP
   - Gui+P
